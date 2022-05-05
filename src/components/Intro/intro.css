@@ -49,10 +49,14 @@ font-size: 3rem;
 }
 .i-icons>*{
     transform: scale(0.5);
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
 }
 
 .i-icons>*:hover{
     cursor: pointer;
+    transform: rotate(180deg);
+    
+
 }
 .i-right{
     flex:1;
@@ -103,3 +107,4 @@ font-size: 3rem;
      left: 40%;
      filter: blur(72px) 
  }
+ 

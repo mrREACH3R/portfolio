@@ -1,0 +1,49 @@
+.servises{
+
+    padding: 0 3rem 0 3rem;
+    display: flex;
+    height: 90vh;
+    margin-bottom: 12rem;
+    margin-top: 9rem;
+}
+.s-left{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.s-left>:nth-child(1){
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.s-left>:nth-child(2){
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.s-left>:nth-child(3){
+    color: var(--gray);
+    font-size: 14px;
+    margin-top: 1rem;
+}
+.s-button{
+    width: 6.5rem;
+    height: 2.5rem;
+    margin-top: 3rem;
+}
+
+.s-right{
+    position: absolute;
+}
+.s-right>*{
+    position:absolute;
+}
+.s-blur2{
+left :40rem;
+top: 10rem;
+width: 25rem;
+}
+.s-blur{
+    top :11rem;
+    left: -12rem;
+}
