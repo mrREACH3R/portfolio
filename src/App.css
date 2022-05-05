@@ -10,8 +10,9 @@
 --boxShadow:0px 19px 60px rgb(0 0 0 / 8%);
 --smboxShadow:-79px 51px 60px rgba(0,0,0,0.08);
 }
+
 .App{
-  padding: 0.5rem 3.5rem;
+  padding: 0.1rem 1.5rem;
   overflow: hidden;
   color: var(--black);
 }
@@ -20,6 +21,15 @@
   border-radius: 35px;
   border: none;
   color:white;
-  font-size:16px;
+  font-size:11px 26px 11px 26px;
   padding: 10px;
+  background: linear-gradient(180deg,#40DFEF 26%,#99FFCD 99%);
+  box-shadow: 0px 20px 24px 3px rgba(251,161,40,0.42);
+
+}
+.button:hover{
+  background: white;
+  cursor:pointer;
+  color:var(--orange);
+  border: 1px solid var(--black);
 }
