@@ -34,3 +34,7 @@
     cursor: pointer;
     color:var(--yellow);
 }
+.n-button{
+    flex:2;
+    
+}
