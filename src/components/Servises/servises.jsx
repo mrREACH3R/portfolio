@@ -10,7 +10,7 @@ const servises=()=>{
     <div className='servises'>
         <div className='s-left'>
         <span>Our</span>
-        <span>servises</span>
+        <span>services</span>
         <span>We are poviding great servises of new commers</span>
         <a href={Resume} download>
         <button className='button s-button'>Download</button></a>

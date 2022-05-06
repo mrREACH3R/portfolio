@@ -1,0 +1,74 @@
+.works{
+    padding: 0 3rem 0 3rem;
+     display: flex;
+     height: 90vh;
+     margin-top: 4rem;
+}
+.w-right{
+    position: relative;
+}
+
+.w-mainCircle{
+    left: 25rem;
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 100%;
+    box-shadow: var(--smboxShadow);
+    top: 2rem;
+    background: white;
+}
+.w-mainCircle>*{
+    position: absolute;
+}
+.w-mainCircle>:nth-child(1){
+    top: -3rem;
+    left: 6rem;
+}
+.w-mainCircle>:nth-child(2){
+    top: 8rem;
+    left: -2rem;
+}
+.w-mainCircle>:nth-child(3){
+    top: 5rem;
+    left: 5rem;
+}
+.w-mainCircle>:nth-child(4){
+    top: 8rem;
+    left: 12rem;
+}
+.w-secCircle{
+
+    width: 5rem;
+    height:5rem;
+    position: absolute;
+    border-radius: 100%;
+    border: 5px solid whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    box-shadow: var(--smboxShadow);
+    background: white;
+}
+.w-secCircle>img{
+    transform: scale(0.4);
+}
+.w-backCircle{
+    position: absolute;
+    height: 13rem;
+    width: 13rem;
+    border-radius: 100%;
+    z-index: -1;
+    
+}
+.blueCircle{
+    background: #40DFEF;
+    left:33rem;
+    top: 0rem;
+}
+.yellowCircle{
+    background: #FEB139;
+    left:33rem;
+    top: 8rem;
+}
