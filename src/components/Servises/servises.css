@@ -47,3 +47,22 @@ width: 25rem;
     top :11rem;
     left: -12rem;
 }
+@media screen and (max-width:480px){
+    .servises{
+       
+        margin-top: 0;
+        flex-direction: column;
+        gap: 5rem;
+        height: 66rem;
+        padding: 0;
+    }
+    .s-right{
+        display: flex;
+        flex-direction: column;
+        gap: 17rem;
+
+    }
+    .s-right>*{
+      position: static;  
+    }
+}

@@ -3,7 +3,7 @@ import './experience.css';
 
 const experience = ()=> {
 return(
-        <div className="experience">
+        <div className="experience" id='experience'>
           <div className="achievement">
             {/* darkMode */}
             <div className="circle">3+</div>
