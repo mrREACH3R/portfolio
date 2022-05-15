@@ -4,13 +4,17 @@ import amazon from '../../img/amazon.png';
 import facebook from '../../img/Facebook.png';
 import shopify from '../../img/Shopify.png';
 import Upwork from '../../img/Upwork.png';
+import { themeContext } from '../../Context';
+import { useContext } from 'react';
+import { motion } from 'framer-motion';
 
-
-const work=()=>{
+const Work=()=>{
+    const theme = useContext(themeContext);
+const darkMode=theme.state.darkMode;
     return(
-  <div className='works'>
+  <div className='works' id='works'>
 <div className='s-left'>
-        <span>Works for </span>
+        <span style={{color:darkMode?'white':''}}>Works for </span>
         <span>Brands & Clients</span>
         <span>We are poviding great servises of new commers</span>
         <button className='button s-button'>Hire me</button>
@@ -18,7 +22,12 @@ const work=()=>{
         </div>
        {/*right side */}
 <div className='w-right'>
-    <div className='w-mainCircle'>
+    <motion.div
+    initial={{rotate:45}}
+    whileInView={{rotate:0}}
+    viewport={{margin:'-40px'}}
+    transition={{duration:3.5,type:'spring'}}
+     className='w-mainCircle'>
     <div className='w-secCircle'>
         <img src={amazon} alt=""/>
     </div>
@@ -33,7 +42,7 @@ const work=()=>{
         <img src={facebook} alt=""/>
     </div>
 
-    </div>
+    </motion.div>
     {/* background circle */}
       <div className='w-backCircle blueCircle'></div>
       <div className='w-backCircle yellowCircle'></div>
@@ -44,4 +53,4 @@ const work=()=>{
  
     )
 }
-export default work;
+export default Work;

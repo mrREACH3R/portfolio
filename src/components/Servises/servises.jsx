@@ -5,11 +5,17 @@ import Resume from './resume.pdf';
 import heartemoji from '../../img/heartemoji.png';
 import humbleemoji from '../../img/humble.png';
 import glasses from '../../img/glasses.png';
-const servises=()=>{
+import { themeContext } from '../../Context';
+import { useContext } from 'react';
+import { motion } from 'framer-motion';
+const Servises=()=>{
+    const transition={duration: 1,type:'spring'}
+    const theme = useContext(themeContext);
+const darkMode=theme.state.darkMode;
     return (
     <div className='servises'>
         <div className='s-left'>
-        <span>Our</span>
+        <span style={{color:darkMode?'white':''}}>Our</span>
         <span>services</span>
         <span>We are poviding great servises of new commers</span>
         <a href={Resume} download>
@@ -18,7 +24,11 @@ const servises=()=>{
         </div>
         {/* right side-card*/}
         <div className='s-right'>
-        <div style={{left:'53rem'}}>
+        <motion.div 
+           initial={{left:'30rem'}}
+           whileInView={{left:"53rem"}}
+           transition={transition}
+         style={{left:'53rem'}}>
             <Cards
             emoji={heartemoji}
             heading={'Design'}
@@ -26,21 +36,29 @@ const servises=()=>{
 
             />
     
-        </div>
-        <div style={{top:'15rem',left:'30rem'}}>
+        </motion.div>
+        <motion.div 
+        initial={{left:'5rem'}}
+           whileInView={{left:"30rem"}}
+           transition={transition}
+        style={{top:'15rem',left:'30rem'}}>
         <Cards
             emoji={humbleemoji}
             heading={'Developer'}
             detail={'Html,Css,JavaScript,React'}
         />
-</div>
-<div style={{top:'23rem',left:'48rem'}}>
+</motion.div>
+<motion.div 
+initial={{left:'30rem'}}
+           whileInView={{left:"48rem"}}
+           transition={transition}
+style={{top:'23rem',left:'48rem'}}>
 <Cards
             emoji={glasses}
             heading={'UI/UX'}
             detail={'Html,Css,JavaScript,React'}
         />
-</div>
+</motion.div>
 <div className='blur s-blur2' style={{background:'rgb(238 210 255)'}}></div>
         </div>
             
@@ -50,4 +68,4 @@ const servises=()=>{
     )
 }
 
-export default servises;
+export default Servises;

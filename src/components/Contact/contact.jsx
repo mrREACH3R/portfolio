@@ -23,7 +23,7 @@ const contact=()=>{
           <input type="text" name="user_name" className="user"  placeholder="Name"/>
           <input type="email" name="user_email" className="user" placeholder="Email"/>
           <textarea name="message" className="user" placeholder="Message"/>
-          <input type="submit" value="Send" className="button" style={{width:'3rem'}}/>
+          <input type="submit" value="Send" className="button" style={{width:'7rem'}}/>
           <div
             className="blur c-blur1"
             style={{ background: "#C1F5FF" }}
