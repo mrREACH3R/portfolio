@@ -18,6 +18,7 @@ import linkedin from '../../img/linkedin.png'
 import { themeContext } from '../../Context';
 import { useContext } from 'react';
 import { motion } from 'framer-motion';
+import TypeWriterEffect from 'react-typewriter-effect';
 const Intro=()=>{
 const transition={duration: 2,type:'spring'}
 
@@ -29,7 +30,21 @@ const darkMode=theme.state.darkMode;
             <div className='i-left'>
             <div className='i-name'>
            <span style={{color:darkMode?'white':''}}>Hello! I Am</span>
-           <span>Shubham Kumar</span>
+           <TypeWriterEffect
+           textStyle={{
+          fontSize: '3rem',
+          fontWeight: 100,
+        }}
+            startDelay={100}
+            cursorColor="orange"
+            multiText={['Shubham Kumar','Welcome to my Portfolio',]}
+            loop={true}
+            typeSpeed={30}
+            scrollArea={Intro}
+            nextTextDelay={1000}
+            hideCursorAfterText={true}
+            hideCursor={true}
+          />
            <span>ashsgdgtdgddy</span>
 
        </div>
